@@ -63,11 +63,11 @@ This includes
 
 ### 🚀 Get started
 The easiest way to get started is using [uv](https://docs.astral.sh/uv/0).
-Make sure you have `uv` installed, and then run the following command to create a new project from this template:
+Make sure you have `uv` installed, and then run the following command to create a new project from this template using cruft
 ```bash
 $ uvx cruft create https://github.com/opinner/cookiecutter-pyproject
 ```
-Alternatively with cookiecutter, run
+Alternatively, to use cookiecutter, run
 $ uvx cookiecutter gh:opinner/cookiecutter-pyproject
 
 <details>
