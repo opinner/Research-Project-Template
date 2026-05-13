@@ -68,7 +68,9 @@ Make sure you have `uv` installed, and then run the following command to create 
 $ uvx cruft create https://github.com/opinner/cookiecutter-pyproject
 ```
 Alternatively, to use cookiecutter, run
+```bash
 $ uvx cookiecutter gh:opinner/cookiecutter-pyproject
+```
 
 <details>
 <summary>Alternatively, without uv</summary>
