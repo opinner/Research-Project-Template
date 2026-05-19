@@ -159,6 +159,8 @@ created automatically with [opinner/cookiecutter-pyproject](https://github.com/o
     ├── reports            <- Generated reports (e.g. HTML, PDF, LaTeX, etc.)
     │   ├── book           <- A Jupyter-Book describing the project
     │   └── figures        <- Generated graphics and figures to be used in reporting
+    │
+    ├── figures            <- Most important graphics and figures, usually directly referring to the figures in a publication
 {%- endif %}
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
