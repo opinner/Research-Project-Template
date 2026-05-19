@@ -1,11 +1,11 @@
 # Cookiecutter Py(thon)-Project Template <!-- omit in toc -->
 
-![build](https://github.com/markusritschel/cookiecutter-pyproject/actions/workflows/main.yml/badge.svg)
-[![License MIT](https://img.shields.io/github/license/markusritschel/cookiecutter-pyproject)](./LICENSE)
+![build](https://github.com/opinner/Research-Project-Template/actions/workflows/main.yml/badge.svg)
+[![License MIT](https://img.shields.io/github/license/opinner/Research-Project-Template)](./LICENSE)
 
 > 👉 If you're tired of setting up the same directory and file structure for your new Python projects again and again, then this might be for you ;-)
 
-This repository provides a "template" of a directory structure for small to medium-sized (scientific) projects, making use of [CookieCutter](https://github.com/cookiecutter/cookiecutter), a templating engine for project structures.
+This repository provides a "template" of a directory structure for small to medium-sized (scientific) projects, making use of [Cruft]() or [CookieCutter](https://github.com/cookiecutter/cookiecutter), a templating engine for project structures.
 Check out the links at the [bottom of the page](#sources-of-inspiration) to create your own CookieCutter or use this one to start your project.
 Also, feel free to fork the repository and adjust it to your own needs.
 
@@ -65,11 +65,11 @@ This includes
 The easiest way to get started is using [uv](https://docs.astral.sh/uv/0).
 Make sure you have `uv` installed, and then run the following command to create a new project from this template using cruft
 ```bash
-$ uvx cruft create https://github.com/opinner/cookiecutter-pyproject
+$ uvx cruft create https://github.com/opinner/Research-Project-Template
 ```
 Alternatively, to use cookiecutter, run
 ```bash
-$ uvx cookiecutter gh:opinner/cookiecutter-pyproject
+$ uvx cookiecutter gh:opinner/Research-Project-Template
 ```
 
 <details>
