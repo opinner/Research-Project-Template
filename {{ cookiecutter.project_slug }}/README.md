@@ -81,11 +81,7 @@ created automatically with a [Research-Project-Template](https://github.com/opin
     └── uv.lock            <- Lock file for reproducible dependency resolution (managed by UV)
 
 
-## Reproducibility
-
-### Preparation
-
-### Cloning the project to your local machine
+### Reproducibility Setup
 
 To reproduce the project, clone this repository on your machine
 
@@ -93,15 +89,22 @@ To reproduce the project, clone this repository on your machine
 git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
 ```
 
-### Reproducibility Setup
+The software environment, including all necessary packages, is documented in a more human-readable way in `pyproject.toml` and down to specific version hashes in `requirements.txt`.
+The easiest way is to recreate it, is to have [`uv`](https://docs.astral.sh/uv/0) installed, and then run the terminal command `$ uv venv` to build the project environment 
 
-The easiest way to get started is using [uv](https://docs.astral.sh/uv/0).
-Make sure you have `uv` installed, and then run the following command to create a new project from this template:
-```bash
-$ uvx cookiecutter gh:opinner/Research-Project-Template
-$ cd ./{{ cookiecutter.project_slug }}
+Afterwards, the environment must be activated on Linux/macOS with: `$ source .venv/bin/activate`.
+
+On windows, the activation of the virtual environment needs to be enabled first, via  
+```shell
+$ (Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned) ; (& .venv\Scripts\Activate.ps1)
 ```
-The virtual enviroment is then created with `$ uv venv` and activated on Linux/macOS with: `source .venv/bin/activate`.
+and then
+```shell
+.\.venv\Scripts\activate
+```
+
+
+The virtual environment is then created with `$ uv venv` and activated on Linux/macOS with: `source .venv/bin/activate`.
 
 On windows, I, in order to enable the activation of the virtual environment,  needed to first run  
 ```shell
@@ -111,6 +114,14 @@ and then
 ```shell
 .\.venv\Scripts\activate
 ```
+
+<!--
+Make sure you have `uv` installed, and then run the following command to create a new project from this template:
+```bash
+$ uvx cookiecutter gh:opinner/Research-Project-Template
+$ cd ./{{ cookiecutter.project_slug }}
+```
+-->
 
 <!-- Commented as because just is used instead of make -->
 <!-- For getting started in the fastest way possible, there are Make targets provided.
