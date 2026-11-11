@@ -103,7 +103,7 @@ $ cd ./{{ cookiecutter.project_slug }}
 ```
 The virtual enviroment is then created with `$ uv venv` and activated on Linux/macOS with: `source .venv/bin/activate`.
 
-On windows, I, in order to enable the activation of the virtual enviroment,  needed to first run  
+On windows, I, in order to enable the activation of the virtual environment,  needed to first run  
 ```shell
 (Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned) ; (& .venv\Scripts\Activate.ps1)
 ```
